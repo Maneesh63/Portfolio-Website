@@ -1,0 +1,24 @@
+{% extends 'jinja.html' %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='skills.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<h1>{% block title %} Skills {% endblock %}</h1>
+
+<div class="skills">
+<ul>
+<li class="py">Python Programming Language</li>
+<li class="html">HTML(Hyper Text Markup Language)</li>
+<li class="css">CSS(Cascading Style Sheet)</li>
+<li class="my">MySQL</li>
+<li class="sql">SQL(Structured Query Language)</li>
+<li class="flask">Flask</li>
+<li class="web">Web Development</li>
+<li class="oop">OOP(Object Orientied Programming)</li>
+</ul>
+</div>
+{% endblock %}

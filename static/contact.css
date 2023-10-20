@@ -1,0 +1,168 @@
+
+body{
+   
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+}
+form{
+    margin-top: 1%;
+    margin-left:20%;
+    width:5%;
+    height:6%;
+    padding: 1%;
+    line-height: 5vh;
+}
+input[type='email']{
+   padding: 10%;
+   width: 600%;
+}
+input[type='submit']{
+    color: aliceblue;
+    padding:20% 30%;
+    margin:40% 0 0 0.10rem;
+    width: 400%;
+    font-weight: bold;
+    background-color:#ff3f13;
+    border-radius:0vh;
+    transition: .4s;
+
+}
+input[type='submit']:hover{
+    color: black;
+}
+h1{
+    margin:10% 0 0 20% ;
+}
+.contact-container {
+        display: flex;
+        align-items: center;}
+       
+        .call i {
+            margin-right:2vh;
+            font-size: 24px;
+             }
+
+        .call {
+            display: flex;
+            align-items: center;
+            margin-left: 100vh; }
+
+
+       .contact-container span{
+            color: white;
+        }
+
+        .fab{
+                
+                color: rgb(30, 213, 30);
+        }
+       .fa-phone{
+            color: rgb(21, 21, 235);
+        }
+        .fa-envelope{
+            color: #48ff00;
+        }
+
+
+        .phone{
+            margin:0 2vh 0 0;
+            color: rgb(66, 66, 238);
+        }
+
+        .per{
+            margin-left:100vh;
+            display: flex;
+            align-items: center;
+        }
+        .gmail{
+             display: flex;
+             margin:0 2vh 0 100vh;}
+        .all{
+            line-height: 5vh;
+            display: list-item;
+        }   
+        
+        .gmail span{
+            margin:0 0 0 1rem;
+        }
+      
+.logos1{
+         margin:2vh 0 0 46vh;
+            display: flex;
+             
+        }
+        
+        
+       .insta1 {
+        margin:0 0 0 0;
+            height:5vh;
+            width:2.5vw;
+        }
+        
+           .git1 {
+            margin: 0 0 0 0;
+            height: 5vh;
+            width: 2.4vw;
+        }
+        
+          .linked1 {
+            
+            height: 5vh;
+            width: 2.4vw;
+        }
+            
+
+@media (max-width: 480px) {
+                form {
+                    margin-left: 5%;
+                    width: 25%;
+                }
+            
+                input[type='email'] {
+                    padding: 5%;
+                    width: 250%;
+                }
+            
+                input[type='submit'] {
+                    padding:10% 10%;
+                    margin:5% 0 0 10%;
+                    width: 150%;
+                }
+             textarea[type='text']{
+                width: 385%;
+                }
+  .contact-container{
+                    line-height: 5vh;
+                    display: list-item;
+                     
+                }
+            
+                h1 {
+                    margin-left: 5%;
+                }
+            
+                .call {
+                    margin:2% 0 0 5%;
+                }
+            
+                .gmail {
+                    margin-left: 5%;
+                    
+                }
+                
+                .gmail span{
+                    margin-left: 2vh;
+                }
+                .per{
+                    margin-left: 5.5%;
+                }
+            
+                .logos {
+                    margin:2% 0 0 5%;
+                }
+            }
+            
+
+         

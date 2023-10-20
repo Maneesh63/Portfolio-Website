@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+   
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 8%;
+}
+
+span {
+    color: #f9004d;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 1% 3%;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.btn a{
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.cont1 {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.cont1 h2{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+h1{
+    margin: 20px 0px 20px;
+    font-size: 400%;
+}
+
+h3 {
+    margin-bottom: 5%;
+    font-size: 150%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+.logos {
+     margin:38rem 0 1rem 38rem;  
+     display: flex;
+}
+
+p{
+    margin:0 0 2rem 38rem;
+}
+ 
+
+img{
+    margin:10rem 5vh 0 2rem;
+}
+
+  .insta {
+    height:6vh;
+    width:3vw;
+}
+
+   .git {
+    height:6vh;
+    width: 3vw;
+}
+
+  .linked {
+    height:5.7vh;
+    width:2.8vw;
+}
+
+.checkbtn{
+    font-size:5vh;
+    float: right;
+    margin:0 20vh 0 0;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.cont2{
+ 
+    margin: 0 0 0 30rem;
+    padding:3rem 5rem;
+     
+}
+.no {
+ 
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    margin:8vh 0 0 0;
+    padding:1vh 5vh 1vh 5vh; 
+    border-radius: 5vh;
+}
+.no a{
+    transition: .4s;
+    color: rgb(255, 255, 255);
+}
+.no a:hover{
+    color :#000000;
+}
+.help{
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    margin:8vh 60vh 0 4vh;
+    padding:1vh 5vh 1vh 5vh; 
+    border-radius: 5vh;
+ 
+}
+.help a{
+    color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.help a:hover{
+      
+        color :#000000;
+    }
+     
+.hov{
+    display: flex;
+}
+#para1{
+    color: rgb(232, 10, 10);
+     
+    padding:5vh 6vh;
+    border-radius:3vh;
+    line-height: 4vh;
+    margin:7rem 10.5rem 0 48rem;
+}
+.ph{
+    margin: 0 0 0 50rem;
+    height:75vh;
+    width: 50vb; 
+}
+ 
+.video_c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  }
+
+#back_v {
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        padding-left: 0; /* Reset padding for mobile navigation */
+    }
+
+    .btn {
+        padding: 1% 3%; /* Adjust padding for buttons */
+    }
+
+    .cont1 {
+        left: 2%; /* Adjust left positioning */
+    }
+
+    body {
+        margin: 5% 0;
+        padding: 0 5%; /* Add horizontal padding to body */
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        width: 50%;
+        height: 0vh;
+        text-align: center;
+        padding: 0; /* Reset padding for mobile navigation */
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .btn {
+        float: none;
+        display: block;
+        padding: 1% 3%;
+        top: 0;
+        margin-top: 10px; /* Add margin to separate from content */
+    }
+
+    .logo1 {
+        float: none;
+    }
+
+    .cont1 {
+        position: static;
+        transform: none;
+        margin: 60% 0 0 3rem;
+    }
+     
+
+    footer {
+        margin: 10% 0;
+    }
+
+    .insta,
+    .linked,
+    .git {
+        height:8vw;
+        width:5.5vh;
+        max-width: 150px; /* Add max-width for larger screens */
+    }
+    #para1{
+        color: rgb(0, 0, 0);
+        background-color: #de1616;
+        padding:5vh 6vh;
+        border-radius:3vh;
+        line-height: 4vh;
+        margin:4rem 5rem 0 2rem;
+    }
+    .logos {
+        margin:2rem 0 1rem 1rem;  
+        display: flex;
+   }
+}

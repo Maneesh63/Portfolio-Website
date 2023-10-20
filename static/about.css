@@ -1,0 +1,88 @@
+body{
+   
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-color: black;
+}
+
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.video_c {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    z-index: -1;  }
+
+#back_v {
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.logo1{
+margin-top:1%;
+}
+
+
+.pass{
+ 
+border-radius: 30%;
+height:20%;
+width:20%;
+margin:0% 0 1% 15%;
+
+}
+.me ,h2{
+font-size: 180%;
+font-weight: bold;
+text-align: center;
+margin-top:5%;
+}
+p{
+margin:0% 2% 0 2%;
+line-height: 2pc;
+width: 40%;
+}
+.cont1{
+max-width: 95%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 3%;
+}
+
+
+.talk{
+margin:0rem 29rem 0rem 57.5rem;
+background-color: #f9004d;
+border-radius: 10%;
+transition: .4s;}
+
+.talk:hover{
+transform: scale(1.2);
+}
+.tal{
+    margin: 0 0 0 0;
+    padding:1vh 3vh 1vh 5vh;
+}
+.tal a{
+    color: white;
+}
+
+ 

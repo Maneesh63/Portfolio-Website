@@ -1,0 +1,17 @@
+{% extends 'jinja.html' %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="{{url_for('static',filename='resume.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<h1>{% block title %}Resume{% endblock %}</h1>
+
+<img src="/static/images/resume1.png" class="resume">
+
+<div class="down">
+<a href="/static/images/resume1.png" download="/static/images/resume1.png">download</a>
+</div>
+  {% endblock %}

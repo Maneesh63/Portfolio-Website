@@ -1,0 +1,78 @@
+{% extends 'jinja.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block styles %}
+
+<style>
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+ 
+    margin:15rem 0 0 35rem;
+}
+
+input[type='text']{
+    margin:8px 0 0 0;
+    width: 20rem;
+    padding:5px 10px;
+    border: 1px solid black;
+}
+
+input[type='submit']{
+    border:1px solid black;
+    width :20rem;
+    padding:5px 10px;
+    background-color:rgb(250, 11, 11);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+#iam{
+    border: 1px solid black;
+    width:16.7rem;
+    padding:5px 10px;
+    margin:0 0 0 0px;
+}
+ 
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+ 
+{% if error_message %}
+<div class="error-message">{{ error_message }}</div>
+{% endif %}
+{% if success_message %}
+<div class="success-message">{{ success_message }}</div>
+{% endif %}
+
+
+<form action="{{url_for('register')}}" method="POST">
+
+<label for="name">Name</label><br>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="iam">IAM a</label>
+<select id="iam" name="iam"> 
+
+<option value="recrutier">Recruiter</option>
+<option value="student">Student</option>
+<option value="visitor">Visitor</option>
+<option value="other">Other</option>
+
+</select><br><br>
+
+<input type="submit" value="Give">
+
+</form>
+
+ 
+
+{% endblock %}

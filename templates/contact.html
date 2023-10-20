@@ -1,0 +1,59 @@
+{% extends 'jinja.html' %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+<link rel="stylesheet" href="{{url_for('static',filename='contact.css')}}">
+
+{%  endblock %}
+
+{% block content %} 
+<h1>{% block title %}contact{% endblock %}</h1>
+
+ 
+<div class="contact-container">
+
+    <form action='{{url_for('contact')}}' method='POST'>
+        <label>Email</label>
+        <input type="email" name="email" required><br>
+
+        <label>Message</label>
+        <textarea type="text" id="text" name="text"  rows="5" cols="50"></textarea> 
+
+    <input type="submit" value="Get In Touch">
+    </form>
+
+<div class="all">
+    <div class="call">
+        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+        <span>9962080860</span>
+    </div>
+  
+ <div class="per">   
+    <li class="phone"><a href="#"><i class="fas fa-phone"></i></a></li>
+    <span>9360668724</span>
+  </div>
+
+  <div class="gmail"> 
+    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+    <span>maneeshmaneesh391@gmail.com</span>
+  </div>  
+</div>   
+
+</div>
+
+ 
+<div class="logos1">
+        <li><a href='https://www.instagram.com/m.r.mass001/'>
+             <img src='/static/images/instagram.png' class="insta1"</a></li>
+         <li><a href='#'>
+             <img src='/static/images/linkedin.png' class="linked1"</a></li>
+         <li><a href='#'>
+             <img src='/static/images/git1.jpg' class="git1"</a></li>
+         </div>
+ 
+  
+{% endblock %}

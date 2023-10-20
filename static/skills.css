@@ -1,0 +1,42 @@
+ 
+h1{
+    margin:4% 0 0 38rem;
+}
+.skills{
+    margin:2rem 0 0 38rem;
+    line-height: 7vh;
+    font-weight: bold;
+}
+.py:hover{
+  color: rgb(231, 34, 34);
+}
+.html:hover{
+    color: rgb(231, 34, 34);
+}
+.css:hover{
+    color: rgb(231, 34, 34);
+}
+.my:hover{
+    color: rgb(231, 34, 34);
+}
+.sql:hover{
+    color: rgb(231, 34, 34);
+}
+.flask:hover{
+    color: rgb(231, 34, 34);
+}
+.web:hover{
+    color: rgb(231, 34, 34);
+}
+.oop:hover{
+    color: rgb(231, 34, 34);
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    list-style:circle;
+}

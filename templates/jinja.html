@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+
+    {% block styles %} {% endblock %}
+
+    <div class="video_c">
+        <video id="back_v" autoplay muted loop>
+            <source src="/static/videoes/pexels_videos_2611250 (2160p).mp4" type="video/mp4">
+        </video>
+    </div>
+</head>
+<body>
+
+    <header> 
+        <nav>
+            <h2 class="logo1">Portfo<span>lio</span></h2>
+          <ul>
+              <li><a href="{{url_for('home')}}">Home</a></li>
+              <li><a href="{{url_for('about')}}">About Me</a></li>
+              <li><a href="{{url_for('skills')}}">Skills</a></li>
+              <li><a href="{{url_for('resume')}}">Resume</a></li>
+              <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        <a href='{{url_for('register')}}' class="btn">Join</a>
+        </nav>
+    </header>
+
+     
+     
+        {% block content%} {% endblock %}
+
+        {% block footer %}{% endblock%}
+
+<footer>
+    <div class="logos">
+   <li><a href='#'>
+        <img src='/static/images/instagram.png' class="insta"></a></li>
+    <li><a href='#'>
+        <img src='/static/images/linkedin.png' class="linked"></a></li>
+    <li><a href='#'>
+        <img src='/static/images/git1.jpg' class="git"></a></li>
+    </div>
+    <p id="pa1">@ 2023 Portfolio Some Rights Reserved</p>
+     
+ </footer>
+</body>
+</html>

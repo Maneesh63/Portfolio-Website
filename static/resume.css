@@ -1,0 +1,24 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height:3rem;
+}
+h1{
+    margin: 15vh 0 0 100vh;
+}
+.resume{
+    margin: 2vh 0 0vh 80vh;
+    height: 80vh;
+    width: 80wh;
+}
+.down{
+  margin:2rem 0 0 45rem;
+}
+.down a{
+  background-color:red;
+  padding:1vb 3vb ;
+  border-radius: 5vh;
+  color: white;
+}
+.down a:hover{
+  color: black;
+}

@@ -1,0 +1,33 @@
+{% extends 'jinja.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+
+ {% endblock %}
+
+ {% block title %} about {% endblock %}
+
+ {% block content %}
+
+ <div class="video_c">
+    <video id="back_v" autoplay muted loop>
+        <source src="/static/videoes/pexels_videos_2611250 (2160p).mp4" type="video/mp4">
+    </video>
+</div>
+
+   <div class="me"> 
+    <h2>About Me</h2>
+</div>
+   
+   <div class="cont1">
+    <img src="/static/images/me.png" class="pass">
+    <p>Myself Maneesh, currently pursuing my Bachelor's in BCA in Bangalore, and 
+        I was a technical student with programming knowledge, particularly in Python and Flask web development. 
+    I gained experience in developing web applications using Python and the Flask framework.
+     I learned how to create Dynamic web pages, handle form submissions, and interact with databases using Flask and MySQL.
+    </p> </div>
+    
+     
+    {% endblock %}  
+   
+ 
